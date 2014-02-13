@@ -1,21 +1,21 @@
 {
-	"name": "tc-tap-run",
-	"version": "0.0.1",
-	"description": "TAP runner for team-city",
-	"main": "index.js",
-	"dependencies": {
-		"tap": "~0.4.8"
-	},
-	"scripts": {
-		"test": " "
-	},
-	"bin": {
-		"tc-tap-run": "index.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/e-conomic/tc-tap-run.git"
-	},
-	"author": "",
-	"license": "MIT"
+  "name": "tc-tap-run",
+  "version": "0.0.2",
+  "description": "TAP runner for team-city",
+  "main": "index.js",
+  "dependencies": {
+    "tap": "~0.4.8"
+  },
+  "scripts": {
+    "test": " "
+  },
+  "bin": {
+    "tc-tap-run": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/e-conomic/tc-tap-run.git"
+  },
+  "author": "",
+  "license": "MIT"
 }
