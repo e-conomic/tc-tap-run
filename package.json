@@ -3,8 +3,7 @@
 	"version": "0.0.1",
 	"description": "TAP runner for team-city",
 	"main": "index.js",
-	"dependencies": {},
-	"devDependencies": {
+	"dependencies": {
 		"tap": "~0.4.8"
 	},
 	"scripts": {
