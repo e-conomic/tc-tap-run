@@ -1,0 +1,18 @@
+{
+	"name": "tc-tap-run",
+	"version": "0.0.1",
+	"description": "TAP runner for team-city",
+	"main": "index.js",
+	"dependencies": {},
+	"devDependencies": {
+		"tap": "~0.4.8"
+	},
+	"scripts": {
+		"test": " "
+	},
+	"bin": {
+		"tc-tap-run": "index.js"
+	},
+	"author": "",
+	"license": "MIT"
+}
