@@ -9,7 +9,6 @@ var child = cp.spawn(cli[0], cli.slice(1));
 
 child.stdout.pipe(tc);
 child.stdout.on('end', function() {
-	console.log(tc.results.list);
 	console.log("##teamcity[testSuiteStarted name='TAP test suite']");
 	tc.results.list.forEach(function(test) {
 		console.log("##teamcity[testStarted name='" + test.name + "' captureStandardOutput='true']");
