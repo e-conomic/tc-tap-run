@@ -1,14 +1,10 @@
 #!/usr/bin/env node
 var fs = require('fs');
-var cp = require('child_process');
 var TapConsumer = require('tap').createConsumer;
 var tc = TapConsumer();
 
-var cli = process.argv[2].split(' ');
-var child = cp.spawn(cli[0], cli.slice(1));
-
-child.stdout.pipe(tc);
-child.stdout.on('end', function() {
+process.stdin.pipe(tc);
+process.stdin.on('end', function() {
 	console.log("##teamcity[testSuiteStarted name='TAP test suite']");
 	tc.results.list.forEach(function(test) {
 		console.log("##teamcity[testStarted name='" + escape(test.name) + "' captureStandardOutput='true']");
