@@ -10,10 +10,10 @@ Install with npm
 npm install -g tc-tap-run
 ```
 
-Then run the tap runner and pass your tests script as in this example.
+Then run your script and pipe the output to the test runner, as in this example.
 
 ```
-tc-tap-run "node ./test.js"
+node ./test.js | tc-tap-run
 ```
 
 Then the test runner will run the test script, parse the stdout and print the corresponding TeamCity information.
