@@ -1,6 +1,6 @@
 {
   "name": "tc-tap-run",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TAP runner for team-city",
   "main": "index.js",
   "dependencies": {
