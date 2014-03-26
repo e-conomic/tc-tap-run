@@ -14,7 +14,9 @@ process.stdin.on('end', function() {
 			console.log("##teamcity[testFailed name='" + escape(test.name) + "' message='"+escape(test.stack.toString())+"' captureStandardOutput='true']");
 		}
 	});
+
 	console.log("##teamcity[testSuiteFinished name='TAP test suite']");
+	if (!tc.results.list.length) process.exit(1);
 });
 
 function escape(str) {
